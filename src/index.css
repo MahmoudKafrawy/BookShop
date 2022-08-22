@@ -29,6 +29,7 @@ code {
 }
 .bookcard_container_image{
   height: 250px;
+  width: 180px;
 }
 .bookcard_image{
     height: 100%;

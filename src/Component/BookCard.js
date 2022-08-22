@@ -10,7 +10,7 @@ const BookCard = ({ book }) => {
             <img className="bookcard_image" src={book.formats["image/jpeg"]} />
           </div>
           <div>
-            <p className="bookcard_title">{book.title.substr(0, 50)}</p>
+            <p className="bookcard_title">{book.title.substr(0, 48)}</p>
             <div title={book.authors.length == 0 ? "Unknow" : book.authors[0].name} className="bookcard_author">
               {book.authors.length == 0 ? "Unknow" : book.authors[0].name.substr(0, 25)}
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import ReactPaginate from "react-paginate";
 import { useParams, useNavigate } from "react-router-dom";
 
-export const PaginationBar = ({ pageNum, getAllBooks }) => {
+export const PaginationBar = ({ pageNum, getAllBooks, search }) => {
   let navigate = useNavigate();
 
   //Change page

@@ -27,6 +27,8 @@ const ViewAll = () => {
     <>
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
         {books.length == 0 ? <CardPlaceHolder /> : null}
+      </div>
+      <div className="flex flex-wrap hamada justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
         {books.map((books) => (
           <BookCard book={books} key={books.id} />
         ))}
