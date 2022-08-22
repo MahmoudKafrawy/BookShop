@@ -14,7 +14,7 @@ const ViewAll = () => {
   // Get All Books
   const getAllBooks = async (pageNum) => {
     setBooks([]);
-    await axios.get(`http://gutendex.com/books/?page=${pageNum}&sort=popular`).then((response) => {
+    await axios.get(`https://gutendex.com/books/?page=${pageNum}&sort=popular`).then((response) => {
       setBooks(response.data.results);
     });
   };

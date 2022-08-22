@@ -18,7 +18,7 @@ function App() {
 
   // Get All Books
   const getAllBooks = async () => {
-    await axios.get(`http://gutendex.com/books/?sort=popular`).then((response) => {
+    await axios.get(`https://gutendex.com/books/?sort=popular`).then((response) => {
       setBooks(response.data.results);
     });
   };

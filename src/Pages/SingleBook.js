@@ -10,7 +10,7 @@ const SingleBook = () => {
 
   // Get Single  Book
   const getSingleBook = async (bookID) => {
-    await axios.get(`http://gutendex.com/books/${bookID}`).then((response) => {
+    await axios.get(`https://gutendex.com/books/${bookID}`).then((response) => {
       setBook(response.data);
       console.log(book);
     });

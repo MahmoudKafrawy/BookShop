@@ -13,7 +13,7 @@ const Search = ({}) => {
 
   // Search All Books
   const search = async (query) => {
-    await axios.get(`http://gutendex.com/books/?search=${query}`).then((response) => {
+    await axios.get(`https://gutendex.com/books/?search=${query}`).then((response) => {
       setSearchedBooks(response.data.results);
       console.log(query);
     });
