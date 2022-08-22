@@ -12,7 +12,7 @@ const BookCard = ({ book }) => {
           <div>
             <p className="bookcard_title">{book.title.substr(0, 48)}</p>
             <div title={book.authors.length == 0 ? "Unknow" : book.authors[0].name} className="bookcard_author">
-              {book.authors.length == 0 ? "Unknow" : book.authors[0].name.substr(0, 25)}
+              {book.authors.length == 0 ? "Unknow" : book.authors[0].name.substr(0, 10)}
             </div>
           </div>
         </div>
