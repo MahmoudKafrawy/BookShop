@@ -75,8 +75,16 @@ padding: 50px;
 .single_book_title{
   font-size: 20px;
   font-weight: bold;
+  margin-top: 20px;
 }
 .hamada:after {
   flex: 1;
   content: '';
+}
+.button_color{
+  background-color: #413b89;
+}
+.button_color:hover{
+  background-color: #5950b8;
+
 }

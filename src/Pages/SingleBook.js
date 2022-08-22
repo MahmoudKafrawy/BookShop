@@ -25,11 +25,11 @@ const SingleBook = () => {
       {book.length == 0 ? (
         <CardPlaceHolder />
       ) : (
-        <div className="flex flex-wrap  items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5 ">
-          <div>
+        <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5 ">
+          <div className="m-5">
             <img src={book.formats["image/jpeg"]} />
           </div>
-          <div className="m-5">
+          <div className="mx-20">
             <p className="single_book_title">Book Title :</p>
             <p>{book.title}</p>
             <p className="single_book_title">Author :</p>
