@@ -10,7 +10,9 @@ const Navbar = ({ search, comingSoon }) => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900 pt-4 pb-3">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
           <Link to="/" className="flex items-center">
-            <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Book Store</span>
+            <span className="self-center text-s md:text-2xl font-bold whitespace-nowrap dark:text-white">
+              Book Store
+            </span>
           </Link>
           <div className="w-3/5">
             <form
