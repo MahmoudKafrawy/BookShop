@@ -10,17 +10,8 @@ export const PaginationBar = ({ pageNum, getAllBooks, search }) => {
     navigate(`/all/${data.selected + 1}`, { replace: false });
     getAllBooks(data.selected + 1);
   };
-  // pagesNumber, getAllMovies, query, search, paginatedPage
-  //   const handlePageClick = (data) => {
-  //     const pageNum = data.selected + 1;
-  //     if (query == "") {
-  //       getAllMovies(pageNum);
-  //     } else {
-  //       search(query, pageNum);
-  //     }
-  //   };
 
-  // Can Use pageCount = PagesNumber But Free API Limits to 500 Pages
+  // Assume pages 500 , can get it from api => items count / items per page
   const pageCount = 500;
   return (
     <>
@@ -44,7 +35,9 @@ export const PaginationBar = ({ pageNum, getAllBooks, search }) => {
         nextLinkClassName={
           "block py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         }
-        breakLinkClassName={"page-link"}
+        breakLinkClassName={
+          "py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        }
         activeClassName={
           "py-2 px-3 text-blue-600 bg-blue-50 border border-gray-300 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
         }

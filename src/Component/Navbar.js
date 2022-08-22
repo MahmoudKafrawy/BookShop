@@ -65,7 +65,7 @@ const Navbar = ({ search, comingSoon }) => {
             </form>
           </div>
           <div className="flex items-center" onClick={() => comingSoon()}>
-            <a href="#" className="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
+            <a href="#" className="text-sm font-medium  ads_title hover:underline">
               EN
             </a>
           </div>
